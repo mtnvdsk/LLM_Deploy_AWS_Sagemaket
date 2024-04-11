@@ -69,7 +69,7 @@ predictor = model.deploy(
 # Test the deployed model
 result = predictor.predict("Sample input data")
 print(result)
-
+```
 # Requirements for this repo
   - [Python 3.8 using venv](https://awstip.com/how-to-use-a-newer-python-version-in-aws-sagemaker-notebook-1682a89625ef)
   - Lamba Function with the code in lambda_function.py
