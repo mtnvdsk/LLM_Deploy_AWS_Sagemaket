@@ -40,6 +40,10 @@ Before you begin, ensure you have the following:
 - [SageMaker Python SDK Documentation](https://sagemaker.readthedocs.io/en/stable/)
 - [SageMaker Model Deployment Best Practices](https://docs.aws.amazon.com/sagemaker/latest/dg/best-practices.html)
 
+# Requirements for this repo
+  - [Python 3.8 using venv](https://awstip.com/how-to-use-a-newer-python-version-in-aws-sagemaker-notebook-1682a89625ef)
+  - Lamba Function with the code in lambda_function.py
+  - Sagemaker Endpoint present at Inferences tab in Sagemaker
 ## Example Code Snippet (Python - SageMaker SDK)
 ```python
 import sagemaker
@@ -70,6 +74,4 @@ predictor = model.deploy(
 result = predictor.predict("Sample input data")
 print(result)
 ```
-# Requirements for this repo
-  - [Python 3.8 using venv](https://awstip.com/how-to-use-a-newer-python-version-in-aws-sagemaker-notebook-1682a89625ef)
-  - Lamba Function with the code in lambda_function.py
+
